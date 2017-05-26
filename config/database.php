@@ -1,5 +1,7 @@
 <?php
 
+$db_config = get_db_config();
+
 return [
 
     /*
@@ -26,7 +28,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => $db_config['connetion'],
 
     /*
     |--------------------------------------------------------------------------
@@ -54,14 +56,14 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', '127.0.0.1'),
-            'database'  => env('DB_DATABASE', 'sample'),
-            'username'  => env('DB_USERNAME', 'homestead'),
-            'password'  => env('DB_PASSWORD', 'secret'),
-            'charset'   => 'utf8',
-            'collation' => 'utf8_unicode_ci',
-            'prefix'    => '',
-            'strict'    => false,
+           'host'      => env('DB_HOST', 'localhost'),
+           'database'  => env('DB_DATABASE', 'forge'),
+           'username'  => env('DB_USERNAME', 'forge'),
+           'password'  => env('DB_PASSWORD', ''),
+           'charset'   => 'utf8',
+           'collation' => 'utf8_unicode_ci',
+           'prefix'    => '',
+           'strict'    => false,
         ],
 
         'pgsql' => [
