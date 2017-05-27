@@ -45,7 +45,23 @@ p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
+/* Users index */
 
+.users {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
+.delete-btn {
+  float: right;
+  position: relative;
+  right: 0;
+}
 /* header */
 
 .navbar-inverse {
@@ -71,7 +87,10 @@ p {
     color: #fff;
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> user-crud
 /* footer */
 
 footer {
@@ -79,6 +98,10 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
+<<<<<<< HEAD
+=======
+
+>>>>>>> user-crud
   a {
     color: #555;
   }
@@ -111,6 +134,19 @@ footer {
     font-weight: bold;
   }
 }
+<<<<<<< HEAD
+=======
+/* Users edit */
+
+.gravatar_edit {
+  margin: 15px auto;
+  text-align: center;
+  .gravatar {
+    float: none;
+    max-width: 100px;
+  }
+}
+>>>>>>> user-crud
 /* sidebar */
 
 aside {
@@ -165,4 +201,16 @@ input {
 
 .panel {
   margin-top: 50px;
+}
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }
