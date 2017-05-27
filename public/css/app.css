@@ -5765,6 +5765,21 @@ p {
   font-size: 1.1em;
   line-height: 1.7em; }
 
+/* Users index */
+.users {
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
+  .users li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee; }
+
+.delete-btn {
+  float: right;
+  position: relative;
+  right: 0; }
+
 /* header */
 .navbar-inverse {
   background-color: #3c3e42; }
@@ -5785,6 +5800,39 @@ p {
   font-weight: bold; }
   #logo:hover {
     color: #fff; }
+
+/* footer */
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777; }
+  footer a {
+    color: #555; }
+  footer a:hover {
+    color: #222; }
+  footer small {
+    float: left; }
+  footer ul {
+    float: right;
+    list-style: none; }
+    footer ul li {
+      float: left;
+      margin-left: 15px; }
+  footer img.brand-icon {
+    width: 17px;
+    height: 17px; }
+  footer .slogon {
+    font-size: 13px;
+    font-weight: bold; }
+
+/* Users edit */
+.gravatar_edit {
+  margin: 15px auto;
+  text-align: center; }
+  .gravatar_edit .gravatar {
+    float: none;
+    max-width: 100px; }
 
 /* sidebar */
 aside section {
@@ -5828,5 +5876,15 @@ input {
 
 .panel {
   margin-top: 50px; }
+
+/* Users index */
+.users {
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
+  .users li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee; }
 
 /*# sourceMappingURL=app.css.map */
