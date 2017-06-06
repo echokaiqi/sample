@@ -31,6 +31,8 @@ Route::get('password/email', 'Auth\PasswordController@getEmail')->name('password
 Route::post('password/email', 'Auth\PasswordController@postEmail')->name('password.reset');
 Route::get('password/reset/{token}', 'Auth\PasswordController@getReset')->name('password.edit');
 Route::post('password/reset', 'Auth\PasswordController@postReset')->name('password.update');
+
+resource('statuses', 'StatusesController', ['only' => ['store', 'destroy']]);
 // 下面的代码 ==> Route::resource('users','UsersController');
 // Route::get('/users', 'UsersController@index')->name('users.index');
 // Route::get('/users/{user}', 'UsersController@show')->name('users.show');

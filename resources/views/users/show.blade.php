@@ -1,4 +1,3 @@
-
 @extends('layouts.default')
 @section('title', $user->name)
 @section('content')
@@ -10,6 +9,16 @@
           @include('shared.user_info', ['user' => $user])
         </section>
       </div>
+    </div>
+    <div class="col-md-12">
+      @if (count($statuses) > 0)
+        <ol class="statuses">
+          @foreach ($statuses as $status)
+            @include('statuses._status')
+          @endforeach
+        </ol>
+        {!! $statuses->render() !!}
+      @endif
     </div>
   </div>
 </div>
